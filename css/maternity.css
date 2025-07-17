@@ -1,0 +1,95 @@
+
+/* Specific styles for project/gear detail pages */
+.detail-hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/matern.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+    color: var(--text-light);
+    padding: 80px 0;
+}
+.detail-hero h1 {
+    font-size: clamp(2.5em, 6vw, 4.5em);
+    margin-bottom: 10px;
+}
+.detail-hero p {
+    font-size: clamp(1em, 2.5vw, 1.5em);
+    max-width: 800px;
+    margin: 0 auto;
+}
+.detail-content {
+    padding: 60px 0;
+    background-color: var(--primary-bg);
+    color: rgba(255, 255, 255, 0.85);
+}
+.detail-content h2 {
+    text-align: left;
+    margin-bottom: 40px;
+    font-size: clamp(1.8em, 4vw, 2.5em);
+}
+.detail-content h2::after {
+    left: 0;
+    transform: translateX(0);
+}
+.detail-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 40px;
+}
+.detail-gallery img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-light);
+    transition: transform 0.3s ease;
+}
+.detail-gallery img:hover {
+    transform: scale(1.03);
+}
+.bts-section {
+    background-color: var(--secondary-bg);
+    padding: 60px 0;
+    margin-top: 50px;
+}
+.bts-section h2 {
+    text-align: center;
+}
+.bts-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    margin-top: 40px;
+}
+.bts-text {
+    flex: 1;
+    min-width: 300px;
+}
+.bts-video {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+}
+.bts-video iframe {
+    width: 100%;
+    max-width: 600px;
+    height: 315px; /* Standard YouTube embed height */
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-light);
+}
+.back-link {
+    display: inline-block;
+    margin-top: 50px;
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+.back-link:hover {
+    color: var(--accent-dark);
+}
