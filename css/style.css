@@ -176,7 +176,7 @@ p {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/Image.jpg') no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../Image.jpg') no-repeat center center/cover;
     background-attachment: fixed; /* Parallax effect */
     color: var(--text-light);
 }
